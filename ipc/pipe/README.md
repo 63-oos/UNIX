@@ -28,6 +28,12 @@ int pipe(int pipefd[2]);
 - on sucess  ->  0
 - on failure -> -1
 
+
+## LIMITATION OF PIPE
+- Using pipe only related process can communicate(i.e child and parent process)
+- There is no name is pipe system
+
+
 Always the pipefd[0] is for the read of the pipe
 Always the pipefd[1] is for the write of the pipe
 The pipe is created in the kernal space 
